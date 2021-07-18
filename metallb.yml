@@ -14,6 +14,7 @@ spec:
   # Source of the application manifests
   source:
     repoURL: https://charts.bitnami.com/bitnami
+    targetRevision: 2.4.3
     chart: metallb
 
     # helm specific config
