@@ -18,13 +18,6 @@ spec:
     chart: metallb
 
     # helm specific config
-    helm:
-      # Extra parameters to set (same as setting through values.yaml, but these take precedence)
-      # Values file as block file
-      values: |
-        configInline:
-          address-pools: 192.168.8.100-192.168.8.150
-
   destination:
     server: https://kubernetes.default.svc
     namespace: metallb
