@@ -20,4 +20,5 @@ spec:
         helm:
       destination:
         server: 'https://kubernetes.default.svc'
-        namespace: 'my-ns-wordpress-set-{{ id }}'
+        namespace: 'my-ns-apps'
+        #namespace: 'my-ns-wordpress-set-{{ id }}'
