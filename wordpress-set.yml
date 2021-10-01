@@ -10,8 +10,8 @@ spec:
           ns: my-ns-word1
         - id: 2
           ns: my-ns-word2
-        - id: 3
-          ns: word3
+        #- id: 3
+        #  ns: word3
   template: 
     metadata:
       name: 'wordpress-set-id-{{ id }}'
