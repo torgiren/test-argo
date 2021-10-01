@@ -7,8 +7,11 @@ spec:
   - list: 
       elements: 
         - id: 1
+          ns: my-ns-word1
         - id: 2
+          ns: my-ns-word2
         - id: 3
+          ns: word3
   template: 
     metadata:
       name: 'wordpress-set-id-{{ id }}'
@@ -20,5 +23,5 @@ spec:
         helm:
       destination:
         server: 'https://kubernetes.default.svc'
-        namespace: 'my-ns-apps'
+        namespace: '{{ ns }}'
         #namespace: 'my-ns-wordpress-set-{{ id }}'
