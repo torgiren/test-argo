@@ -1,0 +1,24 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: wordpress
+  namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  project: exphost
+  source:
+    repoURL: 'https://charts.bitnami.com/bitnami'
+    targetRevision: 12.1.16
+    chart: wordpress
+    helm:
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: my-ns-wordpress1
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - PruneLast=true
+      - CreateNamespace=true
