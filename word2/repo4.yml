@@ -16,7 +16,7 @@ spec:
   # Enforce all resources go to this target namespace. If a cluster scoped
   # resource is found the deployment will fail.
   #
-  # targetNamespace: fleet-wordpress2
+  targetNamespace: fleet-wordpress3
 
   # Any branch can be watched, this field is optional. If not specified the
   # branch is assumed to be master
