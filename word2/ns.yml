@@ -1,0 +1,8 @@
+piVersion: v1
+kind: Namespace
+metadata:
+  name: fleet-wordpress3
+spec:
+  finalizers:
+  - kubernetes
+
