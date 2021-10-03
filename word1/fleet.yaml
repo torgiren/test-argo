@@ -15,7 +15,7 @@ helm:
   chart: "wordpress"
 
   # An https to a valid Helm repository to download the chart from
-  repo: "https:////charts.bitnami.com/bitnami"
+  repo: "https://charts.bitnami.com/bitnami"
 
   # Used if repo is set to look up the version of the chart
   version: "12.1.16"
