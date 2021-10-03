@@ -5,7 +5,7 @@ metadata:
   name: test-argo3
   # For single cluster use fleet-local, otherwise use the namespace of
   # your choosing
-  namespace: fleet-wordpress3
+  namespace: fleet-wordpress2
 spec:
   # This can be a HTTPS or git URL.  If you are using a git URL then
   # clientSecretName will probably need to be set to supply a credential.
@@ -16,7 +16,7 @@ spec:
   # Enforce all resources go to this target namespace. If a cluster scoped
   # resource is found the deployment will fail.
   #
-  targetNamespace: fleet-wordpress3
+  targetNamespace: kube-system
 
   # Any branch can be watched, this field is optional. If not specified the
   # branch is assumed to be master
